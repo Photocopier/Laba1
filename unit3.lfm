@@ -1,0 +1,19 @@
+object Form3: TForm3
+  Left = 711
+  Height = 240
+  Top = 231
+  Width = 320
+  Caption = 'Form3'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '2.0.6.0'
+  object StaticText1: TStaticText
+    Left = 10
+    Height = 225
+    Top = 10
+    Width = 294
+    Caption = 'Справка 1 '
+    OnClick = StaticText1Click
+    TabOrder = 0
+  end
+end
