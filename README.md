@@ -1,1 +1,2 @@
-# Laba1
+# 4BMKN
+Novohatskaya and Iznosov

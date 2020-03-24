@@ -1,0 +1,170 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tform1.caption
+msgid "Text editor"
+msgstr "Текстовый редактор"
+
+#: tform1.cpp1.caption
+msgid "C++"
+msgstr "C++"
+
+#: tform1.find.caption
+msgctxt "tform1.find.caption"
+msgid "Find"
+msgstr "Найти"
+
+#: tform1.js1.caption
+msgid "JS"
+msgstr "JS"
+
+#: tform1.menuitem1.caption
+msgid "File"
+msgstr "Файл"
+
+#: tform1.menuitem10.caption
+msgid "Exit"
+msgstr "Выход"
+
+#: tform1.menuitem11.caption
+msgid "Select all"
+msgstr "Выделить все"
+
+#: tform1.menuitem12.caption
+msgid "Cut"
+msgstr "Вырезать"
+
+#: tform1.menuitem13.caption
+msgid "Copy"
+msgstr "Копировать"
+
+#: tform1.menuitem14.caption
+msgid "Paste"
+msgstr "Вставить"
+
+#: tform1.menuitem15.caption
+msgid "Font"
+msgstr "Шрифт"
+
+#: tform1.menuitem16.caption
+msgid "Design"
+msgstr "Тема оформления"
+
+#: tform1.menuitem17.caption
+msgctxt "tform1.menuitem17.caption"
+msgid "Help"
+msgstr "Справка"
+
+#: tform1.menuitem18.caption
+msgid "About"
+msgstr "О программе"
+
+#: tform1.menuitem19.caption
+msgid "Language"
+msgstr "Язык"
+
+#: tform1.menuitem2.caption
+msgid "Edit"
+msgstr "Правка"
+
+#: tform1.menuitem20.caption
+msgid "Russian"
+msgstr "Русский"
+
+#: tform1.menuitem21.caption
+msgid "English"
+msgstr "Английский"
+
+#: tform1.menuitem22.caption
+msgid "Day"
+msgstr "Дневная"
+
+#: tform1.menuitem23.caption
+msgid "Night"
+msgstr "Ночная"
+
+#: tform1.menuitem24.caption
+msgid "Brand"
+msgstr "Фирменная"
+
+#: tform1.menuitem25.caption
+msgid "Display light"
+msgstr "Подсветка"
+
+#: tform1.menuitem29.caption
+msgid "Search"
+msgstr "Поиск"
+
+#: tform1.menuitem3.caption
+msgid "View"
+msgstr "Вид"
+
+#: tform1.menuitem4.caption
+msgid "Save as"
+msgstr "Сохранить как"
+
+#: tform1.menuitem5.caption
+msgctxt "tform1.menuitem5.caption"
+msgid "Help"
+msgstr "Справка"
+
+#: tform1.menuitem6.caption
+msgid "New"
+msgstr "Новый"
+
+#: tform1.menuitem7.caption
+msgid "Open"
+msgstr "Открыть"
+
+#: tform1.menuitem8.caption
+msgid "Close"
+msgstr "Закрыть"
+
+#: tform1.menuitem9.caption
+msgid "Save"
+msgstr "Сохранить"
+
+#: tform1.pascal1.caption
+msgid "Pascal"
+msgstr "Pascal"
+
+#: tform1.replace.caption
+msgctxt "tform1.replace.caption"
+msgid "Replace"
+msgstr "Заменить"
+
+#: tform2.cancel.caption
+msgid "Cancel"
+msgstr "Отмена"
+
+#: tform2.caption
+msgctxt "tform2.caption"
+msgid "Find"
+msgstr "Найти"
+
+#: tform2.find1.caption
+msgctxt "tform2.find1.caption"
+msgid "Find"
+msgstr "Найти"
+
+#: tform2.findfurther.caption
+msgid "Find further"
+msgstr "Найти далее"
+
+#: tform2.label1.caption
+msgid "Find text"
+msgstr "Найти текст"
+
+#: tform2.label6.caption
+msgid "Replaced by"
+msgstr "Заменить на"
+
+#: tform2.replace1.caption
+msgctxt "tform2.replace1.caption"
+msgid "Replace"
+msgstr "Заменить"
+
+#: tform2.replaceall1.caption
+msgid "Replace All"
+msgstr "Заменить Все"
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+function sayHello()
+{
+ var now = new Date();
+ var hours = now.getHours() 
+ var divider = ":";
+ if (now.getMinutes()<10) divider = ":0";
+ var time = ""+hours + divider + now.getMinutes();
+ document.write( "Сейчас <b>" + time + "</b> и мы желаем Вам");
+ if(hours<5 || hours>19) document.write(" спокойной ночи!");
+ else if (hours<11)
+ document.write(" доброго утра!");
+ else document.write(" хорошей работы!"); 
+}
+// -->
+</script>
+</head>
+<body>
+<script language="JavaScript">
+<!--
+sayHello();
+// -->
+</script>
+</body>
+</html>
