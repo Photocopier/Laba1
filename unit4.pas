@@ -12,7 +12,9 @@ type
   { TForm4 }
 
   TForm4 = class(TForm)
-    StaticText1: TStaticText;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Memo3: TMemo;
     procedure StaticText1Click(Sender: TObject);
   private
 

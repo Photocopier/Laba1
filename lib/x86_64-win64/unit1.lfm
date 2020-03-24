@@ -1,29 +1,30 @@
 object Form1: TForm1
   Left = 586
-  Height = 480
+  Height = 600
   Top = 165
-  Width = 523
+  Width = 654
   Caption = 'Текстовый редактор'
-  ClientHeight = 460
-  ClientWidth = 523
+  ClientHeight = 575
+  ClientWidth = 654
+  DesignTimePPI = 120
   HelpFile = 'Spravka.chm'
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
   inline SynEdit1: TSynEdit
     Left = 0
-    Height = 437
+    Height = 546
     Top = 0
-    Width = 523
+    Width = 654
     Align = alClient
-    Font.Height = -13
+    Font.Height = -16
     Font.Name = 'Courier New'
     Font.Pitch = fpFixed
     Font.Quality = fqNonAntialiased
     ParentColor = False
     ParentFont = False
     TabOrder = 0
-    Gutter.Width = 57
+    Gutter.Width = 72
     Gutter.MouseActions = <>
     RightGutter.Width = 0
     RightGutter.MouseActions = <>
@@ -474,11 +475,11 @@ object Form1: TForm1
     OnChange = SynEdit1Change
     inline SynLeftGutterPartList1: TSynGutterPartList
       object SynGutterMarks1: TSynGutterMarks
-        Width = 24
+        Width = 30
         MouseActions = <>
       end
       object SynGutterLineNumber1: TSynGutterLineNumber
-        Width = 17
+        Width = 21
         MouseActions = <>
         MarkupInfo.Background = clBtnFace
         MarkupInfo.Foreground = clNone
@@ -488,18 +489,19 @@ object Form1: TForm1
         LeadingZeros = False
       end
       object SynGutterChanges1: TSynGutterChanges
-        Width = 4
+        Width = 5
         MouseActions = <>
         ModifiedColor = 59900
         SavedColor = clGreen
       end
       object SynGutterSeparator1: TSynGutterSeparator
-        Width = 2
+        Width = 3
         MouseActions = <>
         MarkupInfo.Background = clWhite
         MarkupInfo.Foreground = clGray
       end
       object SynGutterCodeFolding1: TSynGutterCodeFolding
+        Width = 13
         MouseActions = <>
         MarkupInfo.Background = clNone
         MarkupInfo.Foreground = clGray
@@ -510,19 +512,19 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 437
-    Width = 523
+    Height = 29
+    Top = 546
+    Width = 654
     Panels = <    
       item
-        Width = 40
+        Width = 50
       end>
     ParentFont = False
     SimplePanel = False
   end
   object MainMenu1: TMainMenu
-    left = 102
-    top = 512
+    left = 128
+    top = 640
     object MenuItem1: TMenuItem
       Caption = 'Файл'
       OnClick = Fille
@@ -649,18 +651,18 @@ object Form1: TForm1
   object FontDialog1: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
-    left = 254
-    top = 512
+    left = 318
+    top = 640
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Тектовые файлы|*.txt|Файлы pas|*.pas|Все файлы|*.*'
-    left = 150
-    top = 512
+    left = 188
+    top = 640
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Текстовые файлы|*.txt|Файлы pas|*.pas|Все файлы|*.*'
-    left = 206
-    top = 512
+    left = 258
+    top = 640
   end
   object SynPasSyn1: TSynPasSyn
     Enabled = False
@@ -668,44 +670,44 @@ object Form1: TForm1
     KeyAttri.FrameColor = clGreen
     CompilerMode = pcmDelphi
     NestedComments = False
-    left = 390
-    top = 512
+    left = 488
+    top = 640
   end
   object SynCppSyn1: TSynCppSyn
     DefaultFilter = 'Файлы C++ (*.c,*.cpp,*.h,*.hpp,*.hh)|*.c;*.cpp;*.h;*.hpp;*.hh'
     Enabled = False
     KeyAttri.Foreground = clFuchsia
     KeyAttri.FrameColor = clTeal
-    left = 429
-    top = 512
+    left = 536
+    top = 640
   end
   object SynJScriptSyn1: TSynJScriptSyn
     Enabled = False
     KeyAttri.Background = clMaroon
     KeyAttri.Foreground = clRed
     KeyAttri.FrameColor = clNavy
-    left = 467
-    top = 512
+    left = 584
+    top = 640
   end
   object FindDialog1: TFindDialog
     Options = [frDown, frFindNext, frMatchCase, frReplace, frReplaceAll, frShowHelp]
     OnFind = FindDialog1Find
-    left = 302
-    top = 512
+    left = 378
+    top = 640
   end
   object ReplaceDialog1: TReplaceDialog
     Options = [frFindNext, frMatchCase, frReplace, frReplaceAll, frShowHelp, frHidePromptOnReplace]
     OnReplace = ReplaceDialog1Replace
-    left = 342
-    top = 512
+    left = 428
+    top = 640
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    left = 602
-    top = 512
+    left = 753
+    top = 640
   end
   object OpenDialog2: TOpenDialog
-    left = 508
-    top = 512
+    left = 635
+    top = 640
   end
 end

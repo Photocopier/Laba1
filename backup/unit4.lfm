@@ -1,0 +1,66 @@
+object Form4: TForm4
+  Left = 545
+  Height = 194
+  Top = 198
+  Width = 400
+  Caption = 'Form4'
+  ClientHeight = 194
+  ClientWidth = 400
+  DesignTimePPI = 120
+  LCLVersion = '2.0.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 112
+    Top = 48
+    Width = 400
+    Align = alCustom
+    Color = clSilver
+    Lines.Strings = (
+      'Программа предназначена для простого редактирования текстов. Программа позволяет сохранять текст в файл, и считывать его из файла. '
+      ''
+    )
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 400
+    Align = alTop
+    Alignment = taCenter
+    Color = clSilver
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Lines.Strings = (
+      'Программа: Text Editor v 1.0'
+    )
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Memo3: TMemo
+    Left = 0
+    Height = 29
+    Top = 165
+    Width = 400
+    Align = alBottom
+    Alignment = taCenter
+    Color = clGray
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    Lines.Strings = (
+      'Авторы: Новохатская А.С. и Износов Р.Ю.'
+    )
+    ParentFont = False
+    TabOrder = 2
+  end
+end

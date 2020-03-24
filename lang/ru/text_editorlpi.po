@@ -170,19 +170,11 @@ msgid "Заменить Все"
 msgstr ""
 
 #: tform3.caption
-msgid "Form3"
-msgstr ""
-
-#: tform3.statictext1.caption
-msgid "Справка 1 "
+msgctxt "tform3.caption"
+msgid "Справка"
 msgstr ""
 
 #: tform4.caption
 msgid "Form4"
-msgstr ""
-
-#: tform4.statictext1.caption
-msgctxt "tform4.statictext1.caption"
-msgid "О программе"
 msgstr ""
 

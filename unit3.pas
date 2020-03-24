@@ -12,7 +12,8 @@ type
   { TForm3 }
 
   TForm3 = class(TForm)
-    StaticText1: TStaticText;
+    ListBox1: TListBox;
+    procedure FormCreate(Sender: TObject);
     procedure StaticText1Click(Sender: TObject);
   private
 
@@ -30,6 +31,11 @@ implementation
 { TForm3 }
 
 procedure TForm3.StaticText1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm3.FormCreate(Sender: TObject);
 begin
 
 end;

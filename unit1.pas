@@ -261,7 +261,7 @@ end;
 
 procedure TForm1.Day(Sender: TObject);
 begin
-  synEdit1.Color:= clSkyBlue;
+  synEdit1.Color:= clWhite;
   SynEdit1.Font.Color:= clBlack;
 end;
 

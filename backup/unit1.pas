@@ -7,7 +7,7 @@ uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ActnList,
   Menus, Buttons, ExtCtrls, Grids, Ipfilebroker, SynHighlighterPas, SynEdit,
   SynHighlighterCpp, SynHighlighterJScript, DateTimePicker, LCLIntf, ComCtrls,
-  ShellAPI, Windows, Unit2, LCLTranslator, Unit3;
+  ShellAPI, Windows, Unit2, LCLTranslator, Unit3, Unit4;
 
 type
 
@@ -293,7 +293,7 @@ end;
 
 procedure TForm1.About(Sender: TObject);
 begin
-
+     Form4.Show;
 end;
 
 //Поиск
