@@ -3,7 +3,7 @@ object Form4: TForm4
   Height = 194
   Top = 198
   Width = 400
-  Caption = 'Form4'
+  Caption = 'О программе'
   ClientHeight = 194
   ClientWidth = 400
   DesignTimePPI = 120

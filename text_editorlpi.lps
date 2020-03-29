@@ -7,7 +7,7 @@
       <Unit0>
         <Filename Value="text_editorlpi.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="7"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos Y="25"/>
         <UsageCount Value="97"/>
         <Loaded Value="True"/>
@@ -20,8 +20,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="274"/>
-        <CursorPos X="27" Y="264"/>
+        <TopLine Value="309"/>
+        <CursorPos X="20" Y="315"/>
         <UsageCount Value="97"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -50,7 +50,6 @@
         <EditorIndex Value="3"/>
         <TopLine Value="14"/>
         <CursorPos X="124" Y="24"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -62,7 +61,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="10"/>
         <CursorPos X="77" Y="23"/>

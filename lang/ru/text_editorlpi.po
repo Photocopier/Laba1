@@ -175,6 +175,7 @@ msgid "Справка"
 msgstr ""
 
 #: tform4.caption
-msgid "Form4"
+msgctxt "tform4.caption"
+msgid "О программе"
 msgstr ""
 

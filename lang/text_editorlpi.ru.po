@@ -168,3 +168,12 @@ msgstr "Заменить"
 msgid "Replace All"
 msgstr "Заменить Все"
 
+#: tform3.caption
+msgctxt "tform3.caption"
+msgid "Help"
+msgstr "Справка"
+
+#: tform4.caption
+msgctxt "tform4.caption"
+msgid "About"
+msgstr "О программе"
