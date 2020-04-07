@@ -202,7 +202,6 @@ temp:= ExtensionSearch(File_Ansi);
          SynEdit1.Highlighter:= nil;
        end;
 end;
-    ShowMessage(ExtensionSearch(File_Ansi));
 end;
 
 procedure TForm1.Closse(Sender: TObject);
