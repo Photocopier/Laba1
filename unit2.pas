@@ -52,7 +52,7 @@ end;
 procedure TForm2.Find1Click(Sender: TObject);
 var
   Find: string;
-  i,a: integer;
+  i: integer;
 
 begin
   Find:=Edit1.Text;
@@ -84,7 +84,7 @@ begin
   else  k:=0;
 
   i:=PosEx(AnsiLowerCase(Find), AnsiLowerCase(Form1.SynEdit1.Lines.Text), k);
-  if PosEx(AnsiLowerCase(Find), AnsiLowerCase(Form1.SynEdit1.Lines.Text), k)<>0  //X := PosEx('Привет', 'Эй! Привет мир! Привет.', X+1);
+  if i<>0  //X := PosEx('Привет', 'Эй! Привет мир! Привет.', X+1);
   //Pos(AnsiLowerCase(Find), AnsiLowerCase(Form1.SynEdit1.Lines.Text))<>0
 
     then begin

@@ -1,33 +1,33 @@
 object Form1: TForm1
-  Left = 586
-  Height = 480
-  Top = 165
-  Width = 523
+  Left = 915
+  Height = 784
+  Top = 134
+  Width = 661
   Caption = 'Текстовый редактор'
-  ClientHeight = 460
-  ClientWidth = 523
+  ClientHeight = 759
+  ClientWidth = 661
+  DesignTimePPI = 120
   HelpFile = 'Spravka.chm'
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
   inline SynEdit1: TSynEdit
     Left = 0
-    Height = 437
+    Height = 730
     Top = 0
-    Width = 523
+    Width = 661
     Align = alClient
-    Font.Height = -13
+    Font.Height = -16
     Font.Name = 'Courier New'
     Font.Pitch = fpFixed
     Font.Quality = fqNonAntialiased
     ParentColor = False
     ParentFont = False
     TabOrder = 0
-    Gutter.Width = 57
+    Gutter.Width = 72
     Gutter.MouseActions = <>
     RightGutter.Width = 0
     RightGutter.MouseActions = <>
-    Highlighter = SynPasSyn1
     Keystrokes = <    
       item
         Command = ecUp
@@ -474,11 +474,11 @@ object Form1: TForm1
     OnChange = SynEdit1Change
     inline SynLeftGutterPartList1: TSynGutterPartList
       object SynGutterMarks1: TSynGutterMarks
-        Width = 24
+        Width = 30
         MouseActions = <>
       end
       object SynGutterLineNumber1: TSynGutterLineNumber
-        Width = 17
+        Width = 21
         MouseActions = <>
         MarkupInfo.Background = clBtnFace
         MarkupInfo.Foreground = clNone
@@ -488,18 +488,19 @@ object Form1: TForm1
         LeadingZeros = False
       end
       object SynGutterChanges1: TSynGutterChanges
-        Width = 4
+        Width = 5
         MouseActions = <>
         ModifiedColor = 59900
         SavedColor = clGreen
       end
       object SynGutterSeparator1: TSynGutterSeparator
-        Width = 2
+        Width = 3
         MouseActions = <>
         MarkupInfo.Background = clWhite
         MarkupInfo.Foreground = clGray
       end
       object SynGutterCodeFolding1: TSynGutterCodeFolding
+        Width = 13
         MouseActions = <>
         MarkupInfo.Background = clNone
         MarkupInfo.Foreground = clGray
@@ -510,19 +511,22 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 437
-    Width = 523
+    Height = 29
+    Top = 730
+    Width = 661
     Panels = <    
       item
-        Width = 40
+        Width = 250
+      end    
+      item
+        Width = 500
       end>
     ParentFont = False
     SimplePanel = False
   end
   object MainMenu1: TMainMenu
-    left = 102
-    top = 512
+    left = 128
+    top = 640
     object MenuItem1: TMenuItem
       Caption = 'Файл'
       OnClick = Fille
@@ -630,82 +634,60 @@ object Form1: TForm1
         OnClick = English
       end
     end
-    object MenuItem25: TMenuItem
-      Caption = 'Подсветка'
-      object Pascal1: TMenuItem
-        Caption = 'Pascal'
-        OnClick = Pascal1Click
-      end
-      object Cpp1: TMenuItem
-        Caption = 'C++'
-        OnClick = Cpp1Click
-      end
-      object JS1: TMenuItem
-        Caption = 'JS'
-        OnClick = JS1Click
-      end
-    end
   end
   object FontDialog1: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
-    left = 254
-    top = 512
+    left = 318
+    top = 640
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Тектовые файлы|*.txt|Файлы pas|*.pas|Все файлы|*.*'
-    left = 150
-    top = 512
+    left = 188
+    top = 640
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Текстовые файлы|*.txt|Файлы pas|*.pas|Все файлы|*.*'
-    left = 206
-    top = 512
-  end
-  object SynPasSyn1: TSynPasSyn
-    Enabled = False
-    KeyAttri.Foreground = clLime
-    KeyAttri.FrameColor = clGreen
-    CompilerMode = pcmDelphi
-    NestedComments = False
-    left = 390
-    top = 512
-  end
-  object SynCppSyn1: TSynCppSyn
-    DefaultFilter = 'Файлы C++ (*.c,*.cpp,*.h,*.hpp,*.hh)|*.c;*.cpp;*.h;*.hpp;*.hh'
-    Enabled = False
-    KeyAttri.Foreground = clFuchsia
-    KeyAttri.FrameColor = clTeal
-    left = 429
-    top = 512
-  end
-  object SynJScriptSyn1: TSynJScriptSyn
-    Enabled = False
-    KeyAttri.Background = clMaroon
-    KeyAttri.Foreground = clRed
-    KeyAttri.FrameColor = clNavy
-    left = 467
-    top = 512
+    left = 258
+    top = 640
   end
   object FindDialog1: TFindDialog
     Options = [frDown, frFindNext, frMatchCase, frReplace, frReplaceAll, frShowHelp]
     OnFind = FindDialog1Find
-    left = 302
-    top = 512
+    left = 378
+    top = 640
   end
   object ReplaceDialog1: TReplaceDialog
     Options = [frFindNext, frMatchCase, frReplace, frReplaceAll, frShowHelp, frHidePromptOnReplace]
     OnReplace = ReplaceDialog1Replace
-    left = 342
-    top = 512
+    left = 428
+    top = 640
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    left = 602
-    top = 512
+    left = 568
+    top = 648
   end
   object OpenDialog2: TOpenDialog
-    left = 508
-    top = 512
+    left = 504
+    top = 640
+  end
+  object SynPasSyn2: TSynPasSyn
+    Enabled = False
+    CompilerMode = pcmDelphi
+    NestedComments = False
+    left = 128
+    top = 560
+  end
+  object SynCppSyn2: TSynCppSyn
+    DefaultFilter = 'Файлы C++ (*.c,*.cpp,*.h,*.hpp,*.hh)|*.c;*.cpp;*.h;*.hpp;*.hh'
+    Enabled = False
+    left = 192
+    top = 560
+  end
+  object SynJScriptSyn2: TSynJScriptSyn
+    Enabled = False
+    left = 258
+    top = 560
   end
 end

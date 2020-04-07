@@ -5,9 +5,9 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ActnList,
-  Menus, Buttons, ExtCtrls, Grids, Ipfilebroker, SynHighlighterPas, SynEdit,
-  SynHighlighterCpp, SynHighlighterJScript, DateTimePicker, LCLIntf, ComCtrls,
-  ShellAPI, Windows, Unit2, LCLTranslator, Unit3, Unit4;
+  Menus, Buttons, ExtCtrls, Ipfilebroker, SynHighlighterPas, SynEdit,
+  SynHighlighterCpp, SynHighlighterJScript, LCLIntf, ComCtrls,
+  Unit2, LCLTranslator, Unit3, Unit4, DefaultTranslator,LCLType ;
 
 type
 
@@ -33,11 +33,7 @@ type
     MenuItem22: TMenuItem;
     MenuItem23: TMenuItem;
     MenuItem24: TMenuItem;
-    MenuItem25: TMenuItem;
     OpenDialog2: TOpenDialog;
-    Pascal1: TMenuItem;
-    Cpp1: TMenuItem;
-    JS1: TMenuItem;
     MenuItem29: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem11: TMenuItem;
@@ -53,10 +49,10 @@ type
     ReplaceDialog1: TReplaceDialog;
     SaveDialog1: TSaveDialog;
     StatusBar1: TStatusBar;
-    SynCppSyn1: TSynCppSyn;
+    SynCppSyn2: TSynCppSyn;
     SynEdit1: TSynEdit;
-    SynJScriptSyn1: TSynJScriptSyn;
-    SynPasSyn1: TSynPasSyn;
+    SynJScriptSyn2: TSynJScriptSyn;
+    SynPasSyn2: TSynPasSyn;
     Timer1: TTimer;
     procedure FindDialog1Find(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -69,10 +65,7 @@ type
     procedure About(Sender: TObject);
     procedure language(Sender: TObject);
     procedure Help1(Sender: TObject);
-    procedure JS1Click(Sender: TObject);
     procedure ReplaceClick(Sender: TObject);
-    procedure Pascal1Click(Sender: TObject);
-    procedure Cpp1Click(Sender: TObject);
     procedure FindClick(Sender: TObject);
     procedure Mode(Sender: TObject);
     procedure ReplaceDialog1Replace(Sender: TObject);
@@ -99,6 +92,7 @@ type
   public
 
   end;
+        function ExtensionSearch(temp: String): String;
 
 var
   Form1: TForm1;
@@ -177,12 +171,38 @@ begin
 end;
 
 procedure TForm1.Open(Sender: TObject);
+  var temp: String;
 begin
+  openDialog1.Filter:= 'All ext|*|Text files|*.txt|Pascal|*.pas|С++|*.cpp|JavaScript|*.js';
 if OpenDialog1.Execute then
    begin
-      SynEdit1.Lines.LoadFromFile(OpenDialog1.FileName);
-      File_Ansi:= OpenDialog1.FileName;
+       File_Ansi:= OpenDialog1.FileName;
+      SynEdit1.Lines.LoadFromFile(File_Ansi);
+
    end;
+
+temp:= ExtensionSearch(File_Ansi);
+    case temp of
+       'pas': begin
+         SynEdit1.Highlighter:= SynPasSyn2;
+         Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
+         StatusBar1.Panels.Items[1].Text:= 'Pas';
+       end;
+       'cpp': begin
+         SynEdit1.Highlighter:= SynCppSyn2;
+         Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
+         StatusBar1.Panels.Items[1].Text:= 'С++';
+       end;
+       'js': begin
+         SynEdit1.Highlighter:= SynJScriptSyn2;
+         Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
+         StatusBar1.Panels.Items[1].Text:= 'JScript';
+       end;
+       'txt': begin
+         SynEdit1.Highlighter:= nil;
+       end;
+end;
+    ShowMessage(ExtensionSearch(File_Ansi));
 end;
 
 procedure TForm1.Closse(Sender: TObject);
@@ -261,7 +281,7 @@ end;
 
 procedure TForm1.Day(Sender: TObject);
 begin
-  synEdit1.Color:= clSkyBlue;
+  synEdit1.Color:= clWhite;
   SynEdit1.Font.Color:= clBlack;
 end;
 
@@ -328,26 +348,6 @@ begin
   SetDefaultLang('en', 'lang');
 end;
 
-//Подсветка
-procedure TForm1.Pascal1Click(Sender: TObject);
-begin
-  Form1.SynEdit1.Highlighter:=Form1.SynPasSyn1;
-  Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
-
-end;
-
-procedure TForm1.Cpp1Click(Sender: TObject);
-begin
-  Form1.SynEdit1.Highlighter:=Form1.SynCppSyn1;
-  Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
-end;
-
-procedure TForm1.JS1Click(Sender: TObject);
-begin
-  Form1.SynEdit1.Highlighter:=Form1.SynJScriptSyn1;
-  Form1.SynEdit1.Gutter.Visible:=true;   //возможность сворачивать
-end;
-
 
   procedure TForm1.Sohranit(Sender: TObject);
 begin
@@ -357,6 +357,14 @@ begin
       File_Ansi:= SaveDialog1.FileName;
    end;
 end;
+
+  function ExtensionSearch(temp: String): String;
+var x1: integer;
+  begin
+  x1:= pos('.', temp);
+  ExtensionSearch:= Copy(temp, x1+1);
+  end;
+end.
 
 end.
 

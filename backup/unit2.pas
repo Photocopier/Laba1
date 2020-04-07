@@ -52,7 +52,7 @@ end;
 procedure TForm2.Find1Click(Sender: TObject);
 var
   Find: string;
-  i,a: integer;
+  i: integer;
 
 begin
   Find:=Edit1.Text;

@@ -5,17 +5,9 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "Текстовый редактор"
 msgstr ""
 
-#: tform1.cpp1.caption
-msgid "C++"
-msgstr ""
-
 #: tform1.find.caption
 msgctxt "tform1.find.caption"
 msgid "Найти"
-msgstr ""
-
-#: tform1.js1.caption
-msgid "JS"
 msgstr ""
 
 #: tform1.menuitem1.caption
@@ -88,10 +80,6 @@ msgstr ""
 msgid "Фирменная"
 msgstr ""
 
-#: tform1.menuitem25.caption
-msgid "Подсветка"
-msgstr ""
-
 #: tform1.menuitem29.caption
 msgid "Поиск"
 msgstr ""
@@ -123,10 +111,6 @@ msgstr ""
 
 #: tform1.menuitem9.caption
 msgid "Сохранить"
-msgstr ""
-
-#: tform1.pascal1.caption
-msgid "Pascal"
 msgstr ""
 
 #: tform1.replace.caption
